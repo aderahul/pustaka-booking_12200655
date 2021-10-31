@@ -26,7 +26,7 @@ $vd = $vd ?? Services::validation();
                     <label for="txtEmail" >Email</label>
 
                    <?php if ($vd->getError('email')){ ?>
-                    <div class="alert-danger">
+                    <div class="alert alert-danger">
                     <?php
                         echo ($vd == null ? '' : $vd->getError('email'))
                     ?>
@@ -39,7 +39,7 @@ $vd = $vd ?? Services::validation();
                            type="password" name="sandi" />
                     <label for="txtPass">Kata Sandi</label>
                     <?php if ($vd->getError('email')){ ?>
-                        <div class="alert-danger">
+                        <div class="alert alert-danger">
                             <?php
                             echo ($vd == null ? '' : $vd->getError('email'))
                             ?>
